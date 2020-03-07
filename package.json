@@ -5,19 +5,19 @@
   "main": "index.js",
   "scripts": {
     "prepare-data": "node ./data/generate.js > ./data/db.json",
-    "start-server": "node ./src/server.js"
+    "start-server": "node --inspect ./src/server.js"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/chaomao/web-newbee-1.git"
+    "url": "git+https://github.com/chaomao/json-server-demo.git"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/chaomao/web-newbee-1/issues"
+    "url": "https://github.com/chaomao/json-server-demo/issues"
   },
-  "homepage": "https://github.com/chaomao/web-newbee-1#readme",
+  "homepage": "https://github.com/chaomao/json-server-demo#readme",
   "dependencies": {
     "faker": "^4.1.0",
     "json-server": "^0.16.1"
