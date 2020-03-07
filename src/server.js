@@ -9,7 +9,7 @@ server.use(middlewares)
 server.use(jsonServer.bodyParser)
 server.use(loginMiddlewares)
 
-server.post('/login', (req, res) => {
+server.post('/api/login', (req, res) => {
   if (req.body.username == 'admin' && req.body.password=="password")
     res.jsonp({ "token": "89e38e0ca1c5857c5f848d49fcb825f72926635a"})
   else{
@@ -17,7 +17,7 @@ server.post('/login', (req, res) => {
   }
 })
 
-server.use(router)
+server.use('/api', router)
 
 server.listen(12306, () => {
   console.log('JSON Server is running')

@@ -1,6 +1,6 @@
 module.exports = (req, res, next) => {
   if (req.path == '/') next();
-  if (req.method == 'POST' && req.path == '/login') {
+  if (req.method == 'POST' && req.path == '/api/login') {
     next()
   } else {
     console.log('verify token')
